@@ -47,7 +47,10 @@ function drag(){
         elmnt.style.left = elmnt.offsetLeft + "px";
       }
   
-      window.onload = setPosition;
+    //   window.onload = setPosition;
+      document.onclick = setPosition;
+      
+      
 
 
 
@@ -61,6 +64,8 @@ function drag(){
 
 }
 
+
+//Listener
 
 
 // document.addEventListener("click", function (event) {
