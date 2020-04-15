@@ -52,13 +52,13 @@
 
 @font-face {
     font-family: Win95;
-    src: url(/fonts/win95.woff);
+    src: url("./fonts/win95.woff");
   }
 
-@font-face {
+/* @font-face {
     font-family: Win95_bold;
     src: url(/fonts/VT323.woff2);
-  }
+  } */
 
 
 
