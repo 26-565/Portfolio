@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="94px" height="14px" viewBox="0 0 94 14" enable-background="new 0 0 94 14" xml:space="preserve" shape-rendering="crispEdges">
+<g>
+	<polygon fill="#FFFFFF" points="26,6 26,8 29,8 29,10 30,10 30,12 29,12 29,14 24,14 24,12 28,12 28,10 25,10 25,8 24,8 24,6 25,6 
+		25,4 30,4 30,6 	"/>
+	<path fill="#FFFFFF" d="M85,2V0h-4v2h-1v4h1v2h3v2h-1v2h-2v2h3v-2h1v-2h1V2H85z M84,6h-2V2h2V6z"/>
+	<rect x="74" y="10" fill="#FFFFFF" width="2" height="4"/>
+	<path fill="#FFFFFF" d="M14,10V6h-1V4H9v2H8v6h1v2h4v-2h-3v-2H14z M10,6h2v2h-2V6z"/>
+	<polygon fill="#FFFFFF" points="54,6 54,14 52,14 52,6 50,6 50,14 48,14 48,4 53,4 53,6 	"/>
+	<path fill="#FFFFFF" d="M45,6V4h-4v2h-1v6h1v2h4v-2h1V6H45z M44,12h-2V6h2V12z"/>
+	<polygon fill="#FFFFFF" points="23,6 23,10 21,10 21,6 20,6 20,8 19,8 19,12 20,12 20,14 16,14 16,12 17,12 17,6 16,6 16,4 18,4 
+		18,6 19,6 19,4 22,4 22,6 	"/>
+	<path fill="#FFFFFF" d="M69,2V0h-5v2h-1v10h1v2h5v-2h1V2H69z M68,12h-2v-2h1V8h1V12z M68,4h-1v2h-1v2h-1V2h3V4z"/>
+	<rect x="34" fill="#FFFFFF" width="2" height="2"/>
+	<polygon fill="#FFFFFF" points="37,12 37,14 33,14 33,12 34,12 34,6 33,6 33,4 36,4 36,12 	"/>
+	<polygon fill="#FFFFFF" points="94,12 94,14 88,14 88,12 90,12 90,4 89,4 89,2 90,2 90,0 92,0 92,12 	"/>
+	<polygon fill="#FFFFFF" points="6,0 6,10 5,10 5,12 4,12 4,14 2,14 2,12 1,12 1,10 0,10 0,0 2,0 2,10 4,10 4,0 	"/>
+</g>
+</svg>
