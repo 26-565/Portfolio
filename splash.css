@@ -1,0 +1,180 @@
+
+.splash{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: -webkit-fill-available;
+    flex-direction: column;
+}
+
+
+@keyframes fadein {
+    from { transform: scale(0); }
+    to   { transform: scale(1); }
+  }
+
+
+.splash__outerContainer{
+
+    animation: text-flicker 2s linear infinite,  fadein 0.4s;
+
+
+  
+
+
+
+    height: calc(400 / 400 * 100vh);
+    width: calc(640 / 400 * 100vh);
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-end;
+    background: #5454a8;
+    flex-direction: column;
+    
+
+}
+
+
+.splash__innerContainer{
+
+    height: calc(308 / 400 * 100vh);
+    width: calc(456 / 400 * 100vh);
+    /* width: -webkit-fill-available; */
+    /* max-width: 456px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #333; */
+
+    align-self: center;
+
+    padding-bottom: 2px;
+
+}
+
+
+
+
+
+.splash__title{
+    width: 100%;
+}
+
+.splash__copyright{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+width: 100%;
+}
+
+
+body{
+
+    background-color: #202124;
+    overflow: hidden;
+}
+
+
+
+
+.progressBar {
+  
+
+height: calc(14 / 400 * 100vh);
+width:0px;
+max-width: 100%;
+background-color: #fff !important;
+
+}
+
+
+.version-image{
+    width: calc(94 / 400 * 100vh);
+    height: auto;
+
+}
+
+.copyright-image{
+
+    width: calc(271 / 400 * 100vh);
+    height: auto;
+
+}
+
+.allrights-image{
+
+    width: calc(176 / 400 * 100vh);
+    height: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes text-flicker {
+    0% {
+      opacity:0.8;
+      
+    }
+    
+    2% {
+      opacity:1;
+      
+    }
+    8% {
+      opacity:0.8;
+      
+    }
+    9% {
+      opacity:1;
+     
+    }
+    12% {
+      opacity:0.8;
+      
+    }
+    20% {
+      opacity:1;
+      
+    }
+    25% {
+      opacity:0.8;
+      
+    }
+    30% {
+      opacity:1;
+      
+    }
+    
+    70% {
+      opacity:0.9;
+      
+    }
+    
+    72% {
+      opacity:0.8;
+      
+    }
+    
+    77% {
+      opacity:.9;
+      
+    }
+    100% {
+      opacity:.9;
+      
+    }
+  }

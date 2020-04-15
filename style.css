@@ -1,0 +1,434 @@
+/* KOLORY 
+
+    --background-color: #877e8c;
+    --window-color: #dacfbd;
+    --windowShadow-color: #413e38;
+    --windowHighlight-color: #ecebeb;
+
+    --windowShadow_0-color: #827c71;
+    --windowHighlight_0-color: #ededed;
+
+    --titlebar-color: #3d2b46;
+
+    --windowInner-color: #efe7db;
+    --font-color: #36454f;
+
+
+    //CLASSIC
+
+    --background-color: teal;
+    --window-color: #c6c6c6 ;
+    --windowShadow-color: #000;
+    --windowHighlight-color: #efefef;
+
+    --windowShadow_0-color: #7f7f7f;
+    --windowHighlight_0-color: #ededed;
+
+    --titlebar-color: navy;
+
+    --windowInner-color: #fffbf9;
+    --font-color: #36454f;  
+    
+} */
+
+
+:root{
+    --background-color: #877e8c;
+    --window-color: #dacfbd;
+    --windowShadow-color: #413e38;
+    --windowHighlight-color: #ecebeb;
+
+    --windowShadow_0-color: #827c71;
+    --windowHighlight_0-color: #ededed;
+
+    --titlebar-color: #3d2b46;
+
+    --windowInner-color: #efe7db;
+    --font-color: #36454f;
+}
+
+
+@font-face {
+    font-family: Win95;
+    src: url(win95.woff);
+  }
+
+
+html {
+    box-sizing: border-box
+}
+
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+}
+
+
+body {
+    line-height: 1.5;
+    letter-spacing: -.025em;
+
+    background-color: var(--background-color); 
+}
+
+
+a {
+    outline: 0;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+
+button, label {
+    cursor: pointer
+}
+
+
+.window, body {
+    font-size: 14px;
+}
+
+
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.window, .windows-header, body, html {
+    overflow: hidden
+}
+
+
+/* NIEPOTRZEBNE */
+-webkit-scrollbar-thumb {
+    background-color: silver;
+    border-left: ridge 2px #fff;
+    border-top: ridge 2px #fff;
+    border-right: ridge 2px gray;
+    border-bottom: ridge 2px gray
+}
+
+
+*, :after, :before {
+    box-sizing: inherit;  
+}
+
+
+/* ------------------------------OKIENKO------------------------------- */
+.winContainer {
+    position:relative;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    padding: 50px 80px 80px;
+    overflow: hidden;
+
+
+}
+
+.winContainer__window {
+
+
+    background-color: var(--window-color);
+
+    border-top: 2px solid var(--windowHighlight-color);
+    border-left: 2px solid var(--windowHighlight-color);
+    border-right: 2px solid var(--windowShadow-color);
+    border-bottom: 2px solid var(--windowShadow-color);
+
+
+
+    font-weight: 400;
+    letter-spacing: .025em;
+
+ 
+
+
+
+
+    height: 100%;
+    position: relative;
+
+
+    font-family: Arial, sans-serif;
+
+    /*do wyjebania*/
+    color: #000;
+
+   
+    z-index: 10;
+    float: right;
+
+
+}
+
+
+
+ .winContainer__closeButton {
+
+    background-color: var(--window-color);
+
+    border-left: 2px solid var(--windowHighlight_0-color);
+    border-top: 2px solid var(--windowHighlight_0-color);
+    border-right: 2px solid var(--windowShadow_0-color);
+    border-bottom: 2px solid var(--windowShadow_0-color);
+
+
+
+
+    font-family: Arial, sans-serif;
+
+
+    color: #000;
+
+
+
+
+
+
+    position: relative;
+    z-index: 10;
+    float: right;
+
+
+    padding:0; 
+    height:16px;
+    width:16px;
+    position:relative;
+
+    display: block;
+    -moz-appearance: none;
+    appearance: none;
+    font-weight: 700;
+    letter-spacing: .05em;
+    
+
+    
+}
+
+
+
+
+.winContainer__closeButton:active {
+
+
+    border-top: 2px solid var(--windowShadow-color);
+    border-left: 2px solid var(--windowShadow-color);
+    border-right: 2px solid var(--windowHighlight-color);
+    border-bottom: 2px solid var(--windowHighlight-color);
+
+    -webkit-transform: translate3d(0, 1px, 0);
+    transform: translate3d(0, 1px, 0)
+
+}
+
+
+.winContainer__closeButton:focus {
+    outline: #000 dotted 1px
+}
+
+
+
+.winContainer__titlebar {
+
+    border-top: 1px solid var(--window-color);
+    border-left: 1px solid var(--window-color);
+    border-right: 2px solid var(--window-color);
+    border-bottom: 1px solid var(--window-color);
+    background: var(--titlebar-color);
+
+    
+    font-weight: bold;
+    height: 25px;
+    position: relative;
+    text-align: left;
+    color: #fff;
+    padding: .25em .25em;
+    line-height: 1.4;
+
+}
+
+
+.winContainer__fieldContainer {
+
+    height:100%;
+    padding: 30px 10px 35px
+
+}
+
+
+.winContainer__field {
+
+    border-left: 2px solid var(--windowShadow_0-color);
+    border-top: 2px solid var(--windowShadow_0-color);
+    border-right: 2px solid var(--windowHighlight_0-color);
+    border-bottom: 2px solid var(--windowHighlight_0-color);
+
+    background: var(--windowInner-color);
+
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    /* overflow-y: scroll */
+}
+/* -------------------------------------------------------------------- */
+
+
+/* --------------------------------DESKTOP----------------------------- */
+.desktop {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 72px;
+    z-index: 9999
+}
+
+
+.desktop-icon-container {
+    position: relative
+}
+
+
+.desktop-icon-container:active{
+    color:burlywood;
+    background-color: rgba(0, 0, 255, .5);
+    border: 1px dotted;
+  }
+
+
+.desktop-icon {
+    text-align: center;
+    vertical-align: top;
+    width: 74px;
+    z-index: 0;
+    line-height: 24px;
+    margin: 0;
+    padding: 8px 1px
+}
+
+
+.desktop-icon span {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: win95;
+    font-size: 8px;  
+}
+/* -------------------------------------------------------------------- */
+
+
+/* ----------------------------TASKBAR--------------------------------- */
+.taskbar {
+    padding: 2px;
+
+    box-shadow: inset 1px 0 var(--windowHighlight-color);
+    
+    display: block;
+    background-color: var(--window-color);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid var(--windowHighlight-color);
+    border-bottom: 1px solid var(--windowShadow-color);
+    position: fixed;
+    z-index: 99999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+
+.logoff-container {
+    border: 0;
+    float: left;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 2px 6px 3px;
+    background-color: var(--window-color);
+    border-top: 1px solid var(--windowHighlight-color);
+    border-left: 1px solid var(--windowHighlight-color);
+    border-right: 1px solid var(--windowShadow_0-color);
+    border-bottom: 1px solid var(--windowShadow_0-color);
+    box-shadow: 1px 0 var(--windowShadow-color), 0 1px var(--windowShadow-color), 1px 1px var(--windowShadow-color);
+    min-width: 59px;
+    margin-right: 6px;
+}
+
+
+.logoff {
+    background-image: url(./img/logoff.svg);
+    image-rendering: pixelated;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    width: 45px;
+    height: 16px;
+}
+
+
+.taskbar-button {
+    width: 160px;
+    float: left;
+    padding: 0 10px 0 6px;
+    border-top: 1px solid var(--windowShadow-color);
+    border-left: 1px solid var(--windowShadow-color);
+    box-shadow: inset 1px 1px var(--windowShadow_0-color);
+    background-image: url(./img/bar.svg);
+    image-rendering: pixelated;
+}
+
+
+.credits, .taskbar-button {
+    vertical-align: middle;
+    height: 24px;
+    line-height: 24px;
+    
+    border-right: 1px solid var(--windowHighlight-color);
+    border-bottom: 1px solid var(--windowHighlight-color);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--font-color);
+}
+
+
+.credits {
+    float: right;
+    text-align: right;
+    padding: 0 10px;
+    border-top: 1px solid var(--windowShadow-color);
+    border-left: 1px solid var(--windowShadow-color);
+}
+
+
+
+@media (max-width:768px) {
+    .window-container {
+        padding: 10px 0px 40px;
+        max-width: 500px
+    }
+}
+
+
+@media (max-width:630px) {
+    .desktop {
+        display: none
+    }
+}

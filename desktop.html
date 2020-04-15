@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		
+		<script src="script.js"></script>
+
+
+
+		<link rel="stylesheet" href="style2.css">
+
+		<title>Portfolio</title>
+	</head>
+
+	<body>
+
+
+
+
+		<div class="wallpaper">
+
+			<img width="496" height="176" src="./img/wallpaper.svg">
+
+		</div>
+		
+		
+		
+
+		
+		<div class="desktop">
+
+			<div class="desktop__icon">
+				<div class="desktop__iconContainer">
+					<a onclick="goToVector()">
+					<img width="64" height="64" src="./img/vector.svg">
+					<span>Vector Projects</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="desktop__icon">				
+				<div class="desktop__iconContainer">
+					<a onclick="goTo3D()">
+					<img width="64" height="64" src="./img/rubiks.svg">
+					<span>3D Projects</span>
+				</a>
+				</div>
+			</div>
+
+			<div class="desktop__icon">
+				<div class="desktop__iconContainer">
+					<a onclick="goToGames()">
+					<img width="64" height="64" src="./img/floppy.svg">
+					<span>Games</span>
+				</a>
+				</div>
+			</div>
+			
+			<div class="desktop__icon">
+				<div class="desktop__iconContainer">					
+					<a onclick="goToResume()">
+					<img width="64" height="64" src="./img/CV.svg">
+					<span>Resume</span>
+				</a>
+				</div>
+			</div>
+
+			<div class="desktop__icon">
+				<div class="desktop__iconContainer">
+					<a onclick="sendMail()">
+					<img width="64" height="64" src="./img/mail.svg">
+					<span>Send E-mail</span>
+				</a>
+				</div>
+			</div>
+
+			<div class="desktop__icon">
+				<div class="desktop__iconContainer">
+					<a onclick="goToSoundcloud()">
+					<img width="64" height="64" src="./img/cassette.svg">
+					<span>Soundcloud</span>
+				</a>
+				</div>
+			</div>
+			<div class="desktop__icon">
+				<div class="desktop__iconContainer">
+
+					<a onclick="goToInstagram()">
+						<img width="64" height="64" src="./img/camera.svg">
+						<span>Instagram</span>					
+				</a>
+				</div>
+			</div>		
+		
+
+		</div>
+		<div class="taskbar">
+			<a onclick="logOff()" class="taskbar__logoffContainer" target="_blank">
+				<div class="taskbar__logoff"></div>
+			</a>
+
+			<div class="taskbar__credits">
+
+				<label id="minutes">00</label>:<label id="seconds">00</label>
+			
+			</div>
+		</div>
+
+
+	</body>
+</html>
